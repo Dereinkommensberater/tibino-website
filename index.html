@@ -2,393 +2,357 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<!-- SEO: Primary Meta Tags -->
-<title>Tibino — Kids Songs & Nursery Rhymes | Fun Farm Stories for Toddlers</title>
-<meta name="description" content="Tibino — colorful 3D nursery rhymes, kids songs & fun farm rescue stories for toddlers, babies and preschoolers. Sing along with Tibino and his farm friends! New songs every week.">
-<meta name="keywords" content="nursery rhymes, kids songs, old macdonald had a farm, toddler learning videos, animal sounds for kids, farm animals song, baby songs, preschool songs, tibino">
-<meta name="author" content="Tibino Kids">
-<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tibino Kids — Safe Farm Cartoons &amp; Songs for Toddlers</title>
+<meta name="description" content="Tibino Kids is a gentle 3D cartoon series for toddlers and preschoolers. Meet Tibino, Pip, Foxy, Storm and Milo on Old MacDonald's farm — kind stories, animal sounds and songs, with no scary content and no ads inside the videos.">
 <link rel="canonical" href="https://tibinokids.com/">
+<meta name="theme-color" content="#FF8A1E">
 
-<!-- SEO: Open Graph / Social -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://tibinokids.com/">
-<meta property="og:title" content="Tibino — Kids Songs & Nursery Rhymes | Fun Farm Stories for Toddlers">
-<meta property="og:description" content="Sing along with Tibino! Colorful 3D nursery rhymes, kids songs & fun farm rescue stories for toddlers, babies and preschoolers.">
-<meta property="og:image" content="https://tibinokids.com/images/banner.webp">
-<meta property="og:image:width" content="1376">
-<meta property="og:image:height" content="768">
-<meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Tibino Kids">
-
-<!-- SEO: Twitter -->
+<meta property="og:title" content="Tibino Kids — Safe Farm Cartoons &amp; Songs for Toddlers">
+<meta property="og:description" content="Gentle 3D farm stories for toddlers and preschoolers. Meet Tibino and his friends — kind, calm and made for little ones.">
+<meta property="og:url" content="https://tibinokids.com/">
+<meta property="og:image" content="https://tibinokids.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tibino — Kids Songs & Nursery Rhymes">
-<meta name="twitter:description" content="Sing along with Tibino! Colorful 3D nursery rhymes & fun farm rescue stories for toddlers.">
-<meta name="twitter:image" content="https://tibinokids.com/images/banner.webp">
 
-<!-- Favicons -->
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-
-<!-- Fonts -->
+<link rel="icon" href="img/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-<!-- SEO: Schema.org Structured Data -->
+<!-- Strukturierte Daten: hierueber verstehen Suchmaschinen UND KI-Assistenten, was die Marke ist,
+     wer die Figuren sind und welche Elternfragen die Seite beantwortet. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite",
-      "name": "Tibino Kids",
-      "url": "https://tibinokids.com/",
-      "description": "Colorful 3D nursery rhymes, kids songs & fun farm rescue stories for toddlers, babies and preschoolers.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://tibinokids.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
       "@type": "Organization",
+      "@id": "https://tibinokids.com/#org",
       "name": "Tibino Kids",
       "url": "https://tibinokids.com/",
-      "logo": "https://tibinokids.com/images/profile.webp",
-      "sameAs": [
-        "https://www.youtube.com/@TibinoKids"
+      "logo": "https://tibinokids.com/img/og-image.jpg",
+      "description": "Producer of Tibino Kids, a gentle 3D animated farm series for toddlers and preschoolers.",
+      "sameAs": ["https://www.youtube.com/@TibinoKids"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tibinokids.com/#site",
+      "url": "https://tibinokids.com/",
+      "name": "Tibino Kids",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://tibinokids.com/#org" }
+    },
+    {
+      "@type": "TVSeries",
+      "@id": "https://tibinokids.com/#series",
+      "name": "Tibino Kids",
+      "url": "https://tibinokids.com/",
+      "image": "https://tibinokids.com/img/og-image.jpg",
+      "description": "A gentle 3D animated series for toddlers. Tibino, a kind little farm boy, and his friends Pip the chick, Foxy the fox, Storm the puppy and Milo the kitten share calm everyday adventures on Old MacDonald's farm.",
+      "genre": ["Children's animation", "Preschool", "Educational"],
+      "inLanguage": "en",
+      "audience": { "@type": "PeopleAudience", "suggestedMinAge": 2, "suggestedMaxAge": 6 },
+      "isFamilyFriendly": true,
+      "character": [
+        { "@type": "Person", "name": "Tibino", "description": "A curious, barefoot little farm boy in a straw hat and blue dungarees." },
+        { "@type": "Person", "name": "Pip", "description": "A tiny yellow chick, Tibino's fast and loyal best friend." },
+        { "@type": "Person", "name": "Foxy", "description": "A playful fox cub who walks upright and juggles apples." },
+        { "@type": "Person", "name": "Storm", "description": "A brave golden-brown puppy with big floppy ears." },
+        { "@type": "Person", "name": "Milo", "description": "A shy cream-and-ginger kitten who was rescued from the river." }
+      ],
+      "publisher": { "@id": "https://tibinokids.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tibinokids.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Tibino Kids safe for toddlers?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every Tibino Kids episode is made for children aged 2 to 6. There is no violence, no scary music, no jump scares and no frightening characters. Stories stay calm, problems are solved with kindness, and every episode ends happily. All videos are published as Made for Kids on YouTube, which switches off personalised advertising and comments." }
+        },
+        {
+          "@type": "Question",
+          "name": "What age is Tibino Kids for?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tibino Kids is made for toddlers and preschoolers, roughly 2 to 6 years old. The pacing is slow, the sentences are short, and each episode follows one simple idea so very young children can follow along." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Tibino Kids teach anything?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each episode is built around one gentle lesson: kindness, helping a friend, sharing, patience or courage. Along the way children hear farm animal sounds, animal names, colours and counting woven into the story rather than drilled." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there ads or in-app purchases?",
+          "acceptedAnswer": { "@type": "Answer", "text": "There is nothing to buy and nothing to click inside the videos. Because the episodes are marked Made for Kids on YouTube, personalised advertising is switched off. This website collects no personal data and has no sign-up forms." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I watch Tibino Kids?",
+          "acceptedAnswer": { "@type": "Answer", "text": "All episodes are free to watch on the Tibino Kids YouTube channel. We recommend watching in the YouTube Kids app or with supervised playback so children stay inside age-appropriate content." }
+        },
+        {
+          "@type": "Question",
+          "name": "How often do new episodes come out?",
+          "acceptedAnswer": { "@type": "Answer", "text": "New episodes are released regularly. Subscribing to the YouTube channel is the easiest way to see each new Tibino Kids story as it arrives." }
+        },
+        {
+          "@type": "Question",
+          "name": "Who makes Tibino Kids?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tibino Kids is made by a small independent animation team. Every character is designed once and then kept visually identical across all episodes, so children recognise their friends in every story." }
+        }
       ]
-    },
-    {
-      "@type": "VideoObject",
-      "name": "Where Did All the Cows Go? — Tibino's Farm Rescue",
-      "description": "Old MacDonald farm rescue story for toddlers — sing along with Tibino! Fun nursery rhymes & farm animal songs for kids.",
-      "thumbnailUrl": "https://tibinokids.com/images/thumb-rescue.webp",
-      "uploadDate": "2026-06-15",
-      "duration": "PT3M02S",
-      "contentUrl": "https://www.youtube.com/@TibinoKids"
-    },
-    {
-      "@type": "VideoObject",
-      "name": "Old MacDonald Had a Farm — Sing Along with Tibino",
-      "description": "Classic Old MacDonald nursery rhyme with cute 3D farm animals — cow, chick, lamb and piglet sing and dance with Tibino!",
-      "thumbnailUrl": "https://tibinokids.com/images/thumb-macdonald.webp",
-      "uploadDate": "2026-06-15",
-      "duration": "PT2M48S",
-      "contentUrl": "https://www.youtube.com/@TibinoKids"
     }
   ]
 }
 </script>
-
-<style>
-:root {
-  --orange:#FF8A1E; --orange-dark:#e0710a; --yellow:#FFC42E; --sky:#46B0E6;
-  --green:#79C44D; --cream:#FFF7E8; --coral:#FF5A4D; --ink:#2C2A35; --ink-soft:#6b6878;
-  --display:"Fredoka",system-ui,sans-serif;
-  --body:"Nunito",system-ui,sans-serif;
-  --r:20px; --shadow:0 8px 30px rgba(70,176,230,.14);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.55;overflow-x:hidden}
-img{max-width:100%;height:auto;display:block}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
-
-/* ---- NAV ---- */
-header{position:sticky;top:0;z-index:50;background:rgba(255,247,232,.92);backdrop-filter:blur(10px);border-bottom:3px solid #ffe6b8}
-nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{height:44px;border-radius:50%}
-.brand-text{font-family:var(--display);font-weight:700;font-size:28px;margin-left:10px;
-  background:linear-gradient(180deg,var(--yellow),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
-.nav-left{display:flex;align-items:center}
-.navlinks{display:flex;gap:28px;font-weight:700;font-size:15px;list-style:none}
-.navlinks a{color:var(--ink-soft);transition:color .15s}.navlinks a:hover{color:var(--orange)}
-.btn{font-family:var(--display);font-weight:600;border:none;cursor:pointer;border-radius:999px;
-  padding:13px 26px;font-size:16px;transition:transform .12s,box-shadow .12s;display:inline-flex;align-items:center;gap:8px}
-.btn:active{transform:translateY(1px)}
-.btn-yt{background:var(--coral);color:#fff;box-shadow:0 5px 0 #c9362b}
-.btn-yt:hover{transform:translateY(-2px);box-shadow:0 7px 0 #c9362b}
-.btn-sky{background:var(--sky);color:#fff;box-shadow:0 5px 0 #2f87bb}
-.btn-sky:hover{transform:translateY(-2px);box-shadow:0 7px 0 #2f87bb}
-.btn-orange{background:var(--orange);color:#fff;box-shadow:0 5px 0 var(--orange-dark)}
-.btn-orange:hover{transform:translateY(-2px);box-shadow:0 7px 0 var(--orange-dark)}
-
-/* ---- HERO ---- */
-.hero{position:relative;overflow:hidden}
-.hero img{width:100%;display:block}
-.hero-overlay{position:absolute;bottom:0;left:0;right:0;padding:32px 0;
-  background:linear-gradient(to top,rgba(0,0,0,.45),transparent)}
-.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-
-/* ---- SECTIONS ---- */
-section{padding:72px 0}
-.eyebrow{font-family:var(--display);font-weight:600;color:var(--orange);letter-spacing:.5px;text-transform:uppercase;font-size:14px;text-align:center}
-h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,5vw,42px);text-align:center;margin:6px 0 8px}
-.subtitle{text-align:center;color:var(--ink-soft);max-width:580px;margin:0 auto 40px;font-weight:600;font-size:17px}
-
-/* ---- VIDEO GRID ---- */
-.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.video-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);
-  transition:transform .18s,box-shadow .18s;border:3px solid #fff}
-.video-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(70,176,230,.22)}
-.video-card .thumb{position:relative;overflow:hidden}
-.video-card .thumb img{aspect-ratio:16/9;object-fit:cover;width:100%;transition:transform .3s}
-.video-card:hover .thumb img{transform:scale(1.04)}
-.play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;
-  border-radius:50%;background:var(--coral);display:grid;place-items:center;box-shadow:0 4px 12px rgba(0,0,0,.25);
-  transition:transform .15s}
-.play-btn::after{content:"";border-left:20px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:4px}
-.video-card:hover .play-btn{transform:translate(-50%,-50%) scale(1.1)}
-.duration{position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,.7);color:#fff;font-size:12px;
-  font-weight:700;padding:3px 8px;border-radius:6px}
-.video-meta{padding:18px 20px}
-.video-meta h3{font-family:var(--display);font-weight:600;font-size:18px;margin-bottom:4px}
-.video-meta p{color:var(--ink-soft);font-weight:600;font-size:14px}
-
-/* ---- MEET ---- */
-.meet{background:linear-gradient(180deg,#fff 0%,var(--cream) 100%)}
-.meet-row{display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:center}
-.meet-img{width:180px;height:180px;border-radius:50%;border:5px solid var(--yellow);box-shadow:0 8px 24px rgba(255,196,46,.3)}
-.meet-text{max-width:480px;font-weight:600;color:var(--ink-soft);font-size:17px;line-height:1.65}
-.meet-text strong{color:var(--ink)}
-.characters{display:flex;gap:18px;margin-top:20px;flex-wrap:wrap}
-.char{text-align:center;font-family:var(--display);font-weight:600;font-size:14px;color:var(--ink-soft)}
-.char span{font-size:48px;display:block;margin-bottom:4px}
-
-/* ---- FOR PARENTS ---- */
-.parent-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-.parent-card{background:#fff;border:3px solid #ffe6b8;border-radius:var(--r);padding:30px 24px;text-align:center;
-  transition:transform .15s}
-.parent-card:hover{transform:translateY(-4px)}
-.parent-card .icon{font-size:42px;margin-bottom:10px}
-.parent-card h3{font-family:var(--display);font-weight:600;font-size:20px;margin-bottom:6px}
-.parent-card p{color:var(--ink-soft);font-weight:600;font-size:15px}
-
-/* ---- NEWSLETTER ---- */
-.newsletter{background:radial-gradient(120% 140% at 50% 0%,#ffe9b0,var(--cream));text-align:center}
-.newsletter form{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
-.newsletter input[type="email"]{font-family:var(--body);font-weight:600;border:3px solid #ffd98a;
-  border-radius:999px;padding:14px 22px;font-size:16px;min-width:280px;background:#fff;outline:none;transition:border-color .15s}
-.newsletter input:focus{border-color:var(--orange)}
-.newsletter .msg{margin-top:14px;font-family:var(--display);font-weight:600;color:var(--green);min-height:24px}
-
-/* ---- BLOG TEASER ---- */
-.blog{background:#fff}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
-.blog-card{border:3px solid #f0eee8;border-radius:var(--r);padding:28px 24px;transition:border-color .15s,transform .15s}
-.blog-card:hover{border-color:var(--orange);transform:translateY(-4px)}
-.blog-card .tag{font-family:var(--display);font-weight:600;font-size:12px;color:var(--orange);text-transform:uppercase;letter-spacing:.5px}
-.blog-card h3{font-family:var(--display);font-weight:600;font-size:18px;margin:6px 0 8px}
-.blog-card p{color:var(--ink-soft);font-weight:600;font-size:14px;line-height:1.5}
-
-/* ---- FOOTER ---- */
-footer{background:var(--ink);color:#cfcdd6;text-align:center;padding:36px 24px}
-footer .footer-brand{font-family:var(--display);font-weight:700;font-size:24px;
-  background:linear-gradient(180deg,var(--yellow),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;margin-bottom:8px}
-footer p{font-weight:600;font-size:14px}
-footer a{color:var(--sky);transition:color .15s}footer a:hover{color:var(--yellow)}
-
-/* ---- RESPONSIVE ---- */
-@media(max-width:768px){
-  .navlinks{display:none}
-  .hero-overlay{padding:20px 16px}
-  section{padding:52px 0}
-  .meet-row{text-align:center}
-  .meet-text{text-align:center}
-  .characters{justify-content:center}
-}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
-</style>
 </head>
-
 <body>
-<!-- ======== NAVIGATION ======== -->
+
+<a class="sr-only" href="#main">Skip to content</a>
+
 <header>
-  <nav class="wrap" aria-label="Main navigation">
-    <div class="nav-left">
-      <img src="images/profile.webp" alt="Tibino mascot" class="logo" width="44" height="44" loading="eager">
-      <span class="brand-text">Tibino</span>
+  <nav class="wrap" aria-label="Main">
+    <a class="wordmark logo" href="/">Tibino</a>
+    <div class="navlinks">
+      <a href="#episodes">Episodes</a>
+      <a href="#characters">Characters</a>
+      <a href="#parents">For Parents</a>
     </div>
-    <ul class="navlinks">
-      <li><a href="#songs">Songs</a></li>
-      <li><a href="#stories">Stories</a></li>
-      <li><a href="#meet">Farm Friends</a></li>
-      <li><a href="#parents">For Parents</a></li>
-      <li><a href="#blog">Blog</a></li>
-    </ul>
-    <a class="btn btn-yt" href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener" aria-label="Subscribe to Tibino on YouTube">
-      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true"><path d="M19.6 2.2A2.5 2.5 0 0 0 17.8.4C16.3 0 10 0 10 0S3.7 0 2.2.4A2.5 2.5 0 0 0 .4 2.2C0 3.7 0 7 0 7s0 3.3.4 4.8c.2.8.8 1.4 1.8 1.6C3.7 14 10 14 10 14s6.3 0 7.8-.6a2.5 2.5 0 0 0 1.8-1.6c.4-1.5.4-4.8.4-4.8s0-3.3-.4-4.8Z" fill="#fff"/><path d="m8 10 5.2-3L8 4v6Z" fill="#FF5A4D"/></svg>
-      Subscribe
-    </a>
+    <a class="btn btn-yt btn-sm" href="https://www.youtube.com/@TibinoKids?sub_confirmation=1"
+       target="_blank" rel="noopener">Subscribe</a>
   </nav>
 </header>
 
-<!-- ======== HERO ======== -->
-<section class="hero" aria-label="Welcome to Tibino">
-  <img src="images/banner.webp" alt="Tibino — a cheerful toddler in a straw hat and blue overalls, surrounded by farm animal friends on a sunny farm. Kids Songs and Farm Stories." width="1376" height="768" loading="eager" fetchpriority="high">
-  <div class="hero-overlay">
-    <div class="hero-cta">
-      <a class="btn btn-yt" href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener">
-        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true"><path d="M19.6 2.2A2.5 2.5 0 0 0 17.8.4C16.3 0 10 0 10 0S3.7 0 2.2.4A2.5 2.5 0 0 0 .4 2.2C0 3.7 0 7 0 7s0 3.3.4 4.8c.2.8.8 1.4 1.8 1.6C3.7 14 10 14 10 14s6.3 0 7.8-.6a2.5 2.5 0 0 0 1.8-1.6c.4-1.5.4-4.8.4-4.8s0-3.3-.4-4.8Z" fill="#fff"/><path d="m8 10 5.2-3L8 4v6Z" fill="#FF5A4D"/></svg>
-        Watch on YouTube
-      </a>
-      <a class="btn btn-sky" href="#songs">Newest Songs</a>
-    </div>
-  </div>
-</section>
+<main id="main">
 
-<!-- ======== NEWEST VIDEOS ======== -->
-<section id="songs">
-  <div class="wrap">
-    <p class="eyebrow">New songs every week</p>
-    <h2>Newest Videos</h2>
-    <p class="subtitle">Colorful 3D nursery rhymes and farm rescue stories your little one will sing along to — on repeat.</p>
-
-    <div class="video-grid">
-      <article class="video-card" id="stories">
-        <a href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener" aria-label="Watch: Where Did All the Cows Go?">
-          <div class="thumb">
-            <img src="images/thumb-rescue.webp" alt="Tibino shocked — Where Are the Cows?! Farm rescue thumbnail with sneaky fox and red alarm" width="640" height="358" loading="lazy">
-            <div class="play-btn" aria-hidden="true"></div>
-            <span class="duration">3:02</span>
-          </div>
-        </a>
-        <div class="video-meta">
-          <h3>Where Did All the Cows Go?!</h3>
-          <p>Farm Rescue Story · Nursery Rhymes</p>
-        </div>
-      </article>
-
-      <article class="video-card">
-        <a href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener" aria-label="Watch: Old MacDonald Had a Farm">
-          <div class="thumb">
-            <img src="images/thumb-macdonald.webp" alt="Tibino singing Old MacDonald with cow, chick, lamb and piglet dancing on the farm" width="640" height="358" loading="lazy">
-            <div class="play-btn" aria-hidden="true"></div>
-            <span class="duration">2:48</span>
-          </div>
-        </a>
-        <div class="video-meta">
-          <h3>Old MacDonald Had a Farm</h3>
-          <p>Sing-Along · Kids Songs</p>
-        </div>
-      </article>
-
-      <article class="video-card">
-        <a href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener" aria-label="Watch: Five Little Ducks">
-          <div class="thumb">
-            <img src="images/thumb-rescue.webp" alt="Tibino counting five little ducks on the farm — counting song for toddlers" width="640" height="358" loading="lazy">
-            <div class="play-btn" aria-hidden="true"></div>
-            <span class="duration">2:55</span>
-          </div>
-        </a>
-        <div class="video-meta">
-          <h3>Five Little Ducks</h3>
-          <p>Counting Song · Toddler Learning</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ======== MEET TIBINO ======== -->
-<section id="meet" class="meet">
-  <div class="wrap">
-    <p class="eyebrow">The happiest little farm</p>
-    <h2>Meet Tibino &amp; Friends</h2>
-    <div class="meet-row">
-      <img src="images/profile.webp" alt="Tibino — a cheerful toddler mascot in a straw hat and blue overalls, waving hello" class="meet-img" width="180" height="180" loading="lazy">
-      <div class="meet-text">
-        <p><strong>Tibino</strong> is a kind little farmer who loves to sing. Whenever something goes missing on the farm, Tibino and the barnyard friends set out on a gentle adventure to save the day. Every story ends with a happy song and a big sing-along.</p>
-        <div class="characters" aria-label="Tibino's farm friends">
-          <div class="char"><span>🐮</span>Daisy</div>
-          <div class="char"><span>🐤</span>Pip</div>
-          <div class="char"><span>🐑</span>Woolly</div>
-          <div class="char"><span>🐷</span>Rosie</div>
-        </div>
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" aria-label="Welcome to Tibino Kids">
+    <img class="hero-img" src="img/hero.jpg" width="1920" height="1080" fetchpriority="high"
+         alt="Tibino the little farm boy waving, with Foxy the fox, Pip the chick, Storm the puppy and Milo the kitten on a sunny farm">
+    <div class="hero-text">
+      <h1 class="wordmark">Tibino</h1>
+      <p class="tagline">Kind Farm Stories for Little Ones</p>
+      <p class="lede">Gentle 3D cartoons for toddlers and preschoolers — calm stories,
+        friendly animals and happy endings. Nothing scary, ever.</p>
+      <div class="cta-row">
+        <a class="btn btn-yt" href="https://www.youtube.com/@TibinoKids?sub_confirmation=1"
+           target="_blank" rel="noopener">▶ Watch on YouTube</a>
+        <a class="btn btn-2" href="#characters">Meet the Friends</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ======== FOR PARENTS ======== -->
-<section id="parents">
-  <div class="wrap">
+  <!-- ══════════ FOLGEN ══════════ -->
+  <section id="episodes" class="wrap">
+    <p class="eyebrow">New stories regularly</p>
+    <h2>Episodes</h2>
+    <p class="sub">Every story is short, calm and made to be watched again and again.</p>
+
+    <div class="episodes">
+      <article class="ep-card">
+        <a href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener">
+          <img src="img/ep-intro.jpg" width="640" height="360" loading="lazy"
+               alt="Meet Tibino — Tibino waving with Pip the chick and Foxy the fox on the farm">
+          <div class="ep-meta">
+            <span class="ep-badge">Start here</span>
+            <h3>Meet Tibino &amp; Friends</h3>
+            <p>Tibino shows you around the farm and introduces everyone — Pip, Foxy, Storm
+              and all the animals of Old MacDonald's farm.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="ep-card">
+        <a href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener">
+          <img src="img/ep-rescue.jpg" width="640" height="360" loading="lazy"
+               alt="Puppy Saves Kitten — Storm the puppy and Tibino with the rescued kitten Milo">
+          <div class="ep-meta">
+            <span class="ep-badge">Episode 3</span>
+            <h3>Storm and the Kitten</h3>
+            <p>A basket drifts down the river with a tiny kitten inside. Storm doesn't
+              hesitate — and the farm gains a new little friend called Milo.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <!-- Eingebettete Folge · ohne Cookies (youtube-nocookie).
+         PLATZHALTER: VIDEO_ID durch die echte YouTube-ID ersetzen, sobald die Folge online ist. -->
+    <div class="video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0"
+              title="Meet Tibino &amp; Friends — full episode"
+              loading="lazy" allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+  </section>
+
+  <!-- ══════════ FIGUREN ══════════ -->
+  <section id="characters" class="chars">
+    <div class="wrap">
+      <p class="eyebrow">The happiest little farm</p>
+      <h2>Meet the Friends</h2>
+      <p class="sub">Tap a friend to find out more about them.</p>
+
+      <div class="char-grid">
+
+        <details class="char">
+          <summary>
+            <img src="img/char-tibino.png" width="520" height="650" loading="lazy" alt="Tibino, a little farm boy in a straw hat and blue dungarees">
+            <b>Tibino</b><span>The little farmer</span><span class="more">Read more</span>
+          </summary>
+          <div class="char-body">
+            <p>Tibino is a kind little boy who lives on the farm. He wears a straw hat, blue
+              dungarees and no shoes at all — because grass feels nicer on bare feet.</p>
+            <p><b>He is happiest when</b> he can help somebody. If an animal is lost, cold or
+              scared, Tibino is the first one running.</p>
+          </div>
+        </details>
+
+        <details class="char">
+          <summary>
+            <img src="img/char-pip.png" width="520" height="650" loading="lazy" alt="Pip, a tiny yellow chick">
+            <b>Pip</b><span>The little chick</span><span class="more">Read more</span>
+          </summary>
+          <div class="char-body">
+            <p>Pip is the smallest one on the farm and Tibino's best friend. He is very fast,
+              very fluffy and just a little bit nervous about everything.</p>
+            <p><b>He is happiest when</b> everyone is together — and when nobody asks him to go
+              near the water.</p>
+          </div>
+        </details>
+
+        <details class="char">
+          <summary>
+            <img src="img/char-foxy.png" width="520" height="650" loading="lazy" alt="Foxy, a fox cub standing upright">
+            <b>Foxy</b><span>The playful fox</span><span class="more">Read more</span>
+          </summary>
+          <div class="char-body">
+            <p>Foxy walks on two legs and can juggle three apples at once — he will show you
+              whether you asked or not.</p>
+            <p><b>He is happiest when</b> somebody watches his tricks. Underneath all the
+              showing off, Foxy simply likes having friends.</p>
+          </div>
+        </details>
+
+        <details class="char">
+          <summary>
+            <img src="img/char-storm.png" width="520" height="650" loading="lazy" alt="Storm, a golden-brown puppy with floppy ears">
+            <b>Storm</b><span>The brave puppy</span><span class="more">Read more</span>
+          </summary>
+          <div class="char-body">
+            <p>Storm is a round golden puppy with ears that fly out sideways when he runs.
+              He runs almost everywhere.</p>
+            <p><b>He is happiest when</b> he can be helpful. When a kitten was drifting down the
+              river, Storm went straight into the water without stopping to think.</p>
+          </div>
+        </details>
+
+        <details class="char">
+          <summary>
+            <img src="img/char-milo.png" width="520" height="650" loading="lazy" alt="Milo, a cream and ginger striped kitten with blue eyes">
+            <b>Milo</b><span>The new kitten</span><span class="more">Read more</span>
+          </summary>
+          <div class="char-body">
+            <p>Milo is the newest friend on the farm. He arrived in a basket on the river,
+              cold and shivering, and the others dried him and gave him warm milk.</p>
+            <p><b>He is happiest when</b> somebody sits next to him quietly. Milo is still shy —
+              but he purrs now, and that is a very good sign.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FÜR ELTERN ══════════ -->
+  <section id="parents" class="wrap">
     <p class="eyebrow">Made with care</p>
     <h2>For Parents</h2>
-    <p class="subtitle">Gentle, age-appropriate fun you can feel good about pressing play on.</p>
-    <div class="parent-grid">
-      <div class="parent-card">
-        <div class="icon" aria-hidden="true">🌱</div>
-        <h3>Learning built in</h3>
-        <p>Animal sounds, counting, colors and kindness woven into every song — screen time that teaches.</p>
-      </div>
-      <div class="parent-card">
-        <div class="icon" aria-hidden="true">🛟</div>
-        <h3>Kid-safe</h3>
-        <p>Marked "Made for Kids" (COPPA compliant), calm pacing, zero scary content — just warm, happy stories.</p>
-      </div>
-      <div class="parent-card">
-        <div class="icon" aria-hidden="true">🎵</div>
-        <h3>Sing-along ready</h3>
-        <p>Simple, catchy melodies with call-and-response — designed for toddlers to move, clap and join in.</p>
-      </div>
+    <p class="sub">Everything you might want to know before you press play.</p>
+
+    <div class="faq">
+      <details open>
+        <summary>Is Tibino Kids safe for toddlers?</summary>
+        <p>Yes. Every episode is made for children aged 2 to 6. There is no violence, no scary
+          music, no jump scares and no frightening characters. Problems are solved with kindness,
+          and every episode ends happily. All videos are published as <b>Made for Kids</b> on
+          YouTube, which switches off personalised advertising and comments.</p>
+      </details>
+      <details>
+        <summary>What age is it for?</summary>
+        <p>Toddlers and preschoolers, roughly <b>2 to 6 years old</b>. The pacing is slow, the
+          sentences are short, and each episode follows one simple idea so very young children can
+          follow along on their own.</p>
+      </details>
+      <details>
+        <summary>Does it teach anything?</summary>
+        <p>Each episode is built around one gentle lesson — kindness, helping a friend, sharing,
+          patience or courage. Along the way children hear farm animal sounds, animal names,
+          colours and counting woven into the story rather than drilled.</p>
+      </details>
+      <details>
+        <summary>Are there ads or things to buy?</summary>
+        <p>There is nothing to buy and nothing to click inside the videos. Because the episodes are
+          marked Made for Kids, personalised advertising is switched off. <b>This website collects
+          no personal data</b> — there are no sign-up forms, no newsletter and no tracking.</p>
+      </details>
+      <details>
+        <summary>Where is the best place to watch?</summary>
+        <p>All episodes are free on our
+          <a href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener">YouTube
+          channel</a>. For the calmest experience we recommend the YouTube Kids app or supervised
+          playback, so children stay inside age-appropriate content.</p>
+      </details>
+      <details>
+        <summary>How often do new episodes arrive?</summary>
+        <p>New episodes are released regularly. Subscribing on YouTube is the easiest way to see
+          each new story as it lands — you do not need to give us anything.</p>
+      </details>
+      <details>
+        <summary>Who makes Tibino Kids?</summary>
+        <p>A small independent animation team. Every character is designed once and then kept
+          visually identical across all episodes, so children recognise their friends in every
+          story.</p>
+      </details>
     </div>
-  </div>
-</section>
 
-<!-- ======== BLOG TEASER ======== -->
-<section id="blog" class="blog">
-  <div class="wrap">
-    <p class="eyebrow">From Tibino's blog</p>
-    <h2>Songs, Lyrics &amp; Learning Tips</h2>
-    <p class="subtitle">Free lyrics, printables and gentle parenting tips — one post per song.</p>
-    <div class="blog-grid">
-      <article class="blog-card">
-        <span class="tag">Lyrics</span>
-        <h3>Old MacDonald Had a Farm — Full Lyrics &amp; Fun Activities</h3>
-        <p>The complete lyrics plus 3 hands-on activities to make the song even more fun at home.</p>
-      </article>
-      <article class="blog-card">
-        <span class="tag">Learning</span>
-        <h3>10 Animal Sound Songs That Help Toddlers Learn to Talk</h3>
-        <p>Why nursery rhymes with animal sounds are speech therapists' favorite recommendation.</p>
-      </article>
-      <article class="blog-card">
-        <span class="tag">Parenting</span>
-        <h3>Are Nursery Rhymes Good for Babies? What Parents Should Know</h3>
-        <p>The science behind why repetitive songs matter for early brain development.</p>
-      </article>
+    <div class="badges">
+      <div class="badge"><div class="ic">🌱</div><b>Learning built in</b>
+        <p>Animal sounds, counting, colours and kindness woven into every story.</p></div>
+      <div class="badge"><div class="ic">🧸</div><b>Nothing scary</b>
+        <p>Calm pacing, gentle music, happy endings — every single time.</p></div>
+      <div class="badge"><div class="ic">🔒</div><b>No data collected</b>
+        <p>No forms, no newsletter, no tracking on this site.</p></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ======== NEWSLETTER ======== -->
-<section class="newsletter" aria-label="Newsletter signup">
-  <div class="wrap">
-    <p class="eyebrow">Stay in the loop</p>
-    <h2>Get a new song every week</h2>
-    <p class="subtitle">A friendly heads-up whenever a new Tibino video lands. No spam, ever.</p>
-    <form onsubmit="event.preventDefault();document.getElementById('msg').textContent='🎉 Thanks! You\'re on the list.';this.email.value='';">
-      <input name="email" type="email" required placeholder="Your email" aria-label="Your email address">
-      <button class="btn btn-orange" type="submit">Join the farm</button>
-    </form>
-    <div id="msg" class="msg" role="status" aria-live="polite"></div>
-  </div>
-</section>
+  <!-- ══════════ ABO ══════════ -->
+  <section class="sub-cta">
+    <div class="wrap">
+      <p class="eyebrow">Free on YouTube</p>
+      <h2>Never miss a new story</h2>
+      <p class="sub">One click takes you straight to the channel — and asks if you would like
+        to subscribe.</p>
+      <a class="btn btn-yt" href="https://www.youtube.com/@TibinoKids?sub_confirmation=1"
+         target="_blank" rel="noopener">▶ Subscribe on YouTube</a>
+    </div>
+  </section>
 
-<!-- ======== FOOTER ======== -->
+</main>
+
 <footer>
-  <div class="footer-brand">Tibino</div>
-  <p>Kids Songs &amp; Farm Stories · © 2026 Tibino</p>
-  <p style="margin-top:8px"><a href="https://www.youtube.com/@TibinoKids" target="_blank" rel="noopener">YouTube</a> · <a href="mailto:hello@tibinokids.com">Contact</a></p>
+  <div class="wordmark">Tibino</div>
+  <div>Kind farm stories for little ones</div>
+  <div class="legal">
+    <a href="privacy.html">Privacy</a> · © 2026 Tibino Kids · tibinokids.com
+  </div>
 </footer>
 
 </body>
