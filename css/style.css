@@ -39,18 +39,13 @@ a { color: inherit; text-decoration: none; }
 }
 :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 8px; }
 
-/* ---------- Wortmarke ---------- */
-.wordmark {
-  font-family: var(--display);
-  font-weight: 700;
-  line-height: .95;
-  letter-spacing: .5px;
-  background: linear-gradient(180deg, #ffe06a 0%, var(--yellow) 36%, var(--orange) 76%, #ff5f1e 100%);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-  -webkit-text-stroke: 2px var(--orange-dark);
-  paint-order: stroke fill;
-  filter: drop-shadow(0 3px 0 rgba(201, 86, 15, .35));
-}
+/* ---------- Wortmarke ----------
+   Die Marke ist ein BILD, keine nachgebaute Schrift. Der frühere CSS-Nachbau mit Fredoka traf
+   weder die Buchstabenabstände noch die weiße Kontur und die rotbraune 3D-Kante — er wirkte
+   zusammengeschoben. img/logo.png ist der freigestellte Original-Schriftzug. */
+.logo img { width: 128px; height: auto; }
+.hero-logo { width: min(340px, 78vw); height: auto; margin: 0 auto; }
+.foot-logo { width: 132px; height: auto; margin: 0 auto 8px; }
 
 /* ---------- Kopfzeile ---------- */
 header {
@@ -60,7 +55,7 @@ header {
   border-bottom: 3px solid #ffe6b8;
 }
 nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 62px; }
-.logo { font-size: 26px; }
+.logo { display: flex; align-items: center; }
 .navlinks { display: none; gap: 26px; font-weight: 800; font-size: 15px; }
 .navlinks a { color: var(--ink-soft); transition: color .15s; }
 .navlinks a:hover { color: var(--orange); }
@@ -82,7 +77,33 @@ nav { display: flex; align-items: center; justify-content: space-between; gap: 1
    Streifen zwischen Kopfzeile und Hero-Bild. */
 .hero { position: relative; padding: 0; background: #bfe4f7; }
 .hero-img { width: 100%; display: block; }
-.hero-text { padding: 26px 20px 34px; text-align: center; background: var(--cream); }
+.hero-text { padding: 26px 20px 30px; text-align: center; background: var(--cream); }
+.hero h1 { margin-bottom: 6px; }
+
+/* ---------- Figurenleiste unter dem Hero ----------
+   GRÖSSENVERHÄLTNISSE SIND ECHT (User-Befund): Vorher lagen alle Freisteller auf derselben
+   Bildhöhe, dadurch war Pip — das Küken und kleinste Figur der Serie — größer als Tibino.
+   Jede Figur bekommt jetzt ihren Anteil an einer gemeinsamen Bühnenhöhe, gemessen an ihrer
+   erzählten Körpergröße. */
+.cast-strip {
+  list-style: none; display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: 4px; margin: -14px 0 0; padding: 0 0 6px; position: relative; z-index: 3;
+}
+.cast-strip li { text-align: center; }
+.cast-strip a { display: block; padding: 6px 2px 8px; border-radius: 16px; transition: background .15s; }
+.cast-strip a:hover { background: #fff; box-shadow: 0 6px 18px rgba(70, 176, 230, .18); }
+.cast-strip b { font-family: var(--display); font-weight: 600; font-size: 13px; display: block; margin-top: 2px; }
+.cast-strip .stage { height: 96px; display: flex; align-items: flex-end; justify-content: center; }
+.cast-strip .stage img { width: auto; max-width: 100%; }
+
+/* Gemeinsame Staffelung, auch von den Figurenkarten weiter unten genutzt.
+   Bewusst gedämpft statt maßstabsgetreu: Ein Küken ist neben einem Kleinkind real winzig, als
+   Bild wäre es kaum noch erkennbar. Die Reihenfolge stimmt, die Spreizung ist gestaucht. */
+.s-tibino .stage img { height: 100%; }
+.s-foxy   .stage img { height: 80%; }
+.s-storm  .stage img { height: 66%; }
+.s-milo   .stage img { height: 58%; }
+.s-pip    .stage img { height: 50%; }
 .hero h1 { font-size: clamp(52px, 17vw, 96px); margin-bottom: 2px; }
 .hero .tagline {
   font-family: var(--display); font-weight: 600; color: var(--orange-dark);
@@ -141,7 +162,10 @@ h2 {
   display: flex; flex-direction: column; align-items: center; gap: 6px;
 }
 .char summary::-webkit-details-marker { display: none; }
-.char summary img { width: 100%; max-width: 168px; aspect-ratio: 1/1.25; object-fit: contain; }
+.char summary .stage {
+  height: 178px; width: 100%; display: flex; align-items: flex-end; justify-content: center;
+}
+.char summary .stage img { width: auto; max-width: 100%; }
 .char summary b { font-family: var(--display); font-weight: 600; font-size: 19px; }
 .char summary span { color: var(--ink-soft); font-weight: 700; font-size: 13px; }
 .char summary .more {
@@ -185,7 +209,6 @@ h2 {
 
 /* ---------- Fußzeile ---------- */
 footer { background: var(--ink); color: #cfcdd6; text-align: center; padding: 30px 20px; font-weight: 600; font-size: 14px; }
-footer .wordmark { font-size: 24px; display: inline-block; margin-bottom: 6px; -webkit-text-stroke-width: 1.5px; }
 footer a { color: #ffd28a; }
 footer .legal { margin-top: 10px; font-size: 12.5px; color: #9a97a5; }
 
@@ -223,7 +246,11 @@ footer .legal { margin-top: 10px; font-size: 12.5px; color: #9a97a5; }
   .hero-text > * { max-width: 46%; }
   .hero .lede { margin-left: 0; }
   .cta-row { justify-content: flex-start; }
-  .hero h1 { font-size: clamp(74px, 7vw, 104px); }
+  .hero-logo { margin: 0 0 4px; width: min(420px, 40vw); }
+  .cast-strip { gap: 10px; margin-top: -30px; max-width: 760px; margin-left: auto; margin-right: auto; }
+  .cast-strip .stage { height: 150px; }
+  .cast-strip b { font-size: 15px; }
+  .char summary .stage { height: 200px; }
   .char-grid { grid-template-columns: repeat(5, 1fr); }
 }
 
