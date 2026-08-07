@@ -234,17 +234,21 @@ footer .legal { margin-top: 10px; font-size: 12.5px; color: #9a97a5; }
 
 /* ---------- ab Desktop: Text neben dem Bild (Entwurf V2) ---------- */
 @media (min-width: 1000px) {
-  .hero { min-height: 580px; align-items: center; }
-  .hero-img { object-position: 76% 58%; }
+  /* Hoeher und tiefer angeschnitten, damit die Figuren auf ihren Fuessen stehen statt am
+     unteren Rand abgeschnitten zu werden. */
+  .hero { min-height: 640px; align-items: center; }
+  .hero-img { object-position: 74% 86%; }
   .hero-text {
     text-align: left; max-width: var(--wrap); margin: 0 auto; width: 100%;
-    padding: 30px 20px 92px;
+    padding: 30px 20px 96px;
   }
   .hero-text > * { max-width: 48%; }
-  .cta-row { justify-content: flex-start; }
+  /* Die Knoepfe sitzen mittig unter dem Logo — exakt auf dessen Breite begrenzt, damit sie
+     nicht seitlich herausragen und Foxy verdecken. */
+  .cta-row { justify-content: center; max-width: min(430px, 40vw); }
   .hero-logo { margin: 0 0 10px; width: min(430px, 40vw); }
   .hero .cta-row .btn { padding: 13px 24px; font-size: 16px; }
-  .episodes { margin-top: -78px; }
+  .episodes { margin-top: -56px; }   /* weniger Ueberlappung, sonst verdecken die Karten die Fuesse */
   .char summary .stage { height: 200px; }
   .char-grid { grid-template-columns: repeat(5, 1fr); }
 }
