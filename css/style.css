@@ -218,6 +218,59 @@ h2 {
 }
 .sub-cta h2 { margin-bottom: 6px; }
 
+/* ---------- Textseiten (Eltern-Seiten, Blog, Datenschutz) ---------- */
+.page-head { text-align: center; padding: 34px 0 6px; }
+.page-head h1 {
+  font-family: var(--display); font-weight: 700; line-height: 1.15;
+  font-size: clamp(28px, 6.6vw, 42px); margin-bottom: 10px;
+}
+.page-head .lede { color: var(--ink-soft); font-weight: 600; max-width: 62ch; margin: 0 auto; }
+.prose { max-width: 720px; margin: 0 auto; }
+.prose h2 {
+  text-align: left; font-size: clamp(21px, 4.8vw, 27px); margin: 34px 0 10px;
+}
+.prose h3 {
+  font-family: var(--display); font-weight: 600; font-size: 18px; margin: 22px 0 6px;
+}
+.prose p, .prose li { color: var(--ink-soft); font-weight: 600; }
+.prose p { margin-bottom: 12px; }
+.prose ul { margin: 10px 0 14px 20px; }
+.prose li { margin-bottom: 8px; }
+.prose b, .prose strong { color: var(--ink); }
+.prose a { color: #1f7ab8; text-decoration: underline; }
+
+/* hervorgehobene Antwort — die Stelle, die eine KI oder ein eiliger Elternteil zitiert */
+.answer {
+  background: #fff; border: 3px solid #ffe6b8; border-radius: var(--r);
+  padding: 18px 20px; margin: 18px 0 24px;
+}
+.answer p:last-child { margin-bottom: 0; }
+
+.keypoints { list-style: none; margin: 14px 0 0; padding: 0; }
+.keypoints li { padding: 12px 14px; border-radius: 14px; margin-bottom: 8px; background: #f4f7fa; }
+.keypoints b { display: block; font-family: var(--display); font-weight: 600; font-size: 16px; color: var(--ink); }
+
+/* ---------- Blog ---------- */
+.posts { display: grid; gap: 18px; max-width: 860px; margin: 0 auto; }
+.post-card {
+  background: #fff; border-radius: var(--r); overflow: hidden; border: 3px solid #fff;
+  box-shadow: 0 8px 26px rgba(70, 176, 230, .16); transition: transform .15s ease;
+}
+.post-card:hover { transform: translateY(-4px); }
+.post-card img { aspect-ratio: 16/9; object-fit: cover; width: 100%; }
+.post-card .body { padding: 16px 18px 20px; }
+.post-card h2 { text-align: left; font-size: 20px; margin: 4px 0 6px; }
+.post-card p { color: var(--ink-soft); font-weight: 600; font-size: 14.5px; }
+.post-meta { color: #8a97a3; font-weight: 700; font-size: 12.5px; letter-spacing: .03em; }
+/* width:100% ist Pflicht — sonst schlaegt max-width:720px die globale Regel img{max-width:100%}
+   und das 640px breite Bild sprengt auf dem Handy die Seite (gemessen: 660px bei 375px Viewport). */
+.post-hero { border-radius: var(--r); margin: 0 auto 22px; display: block; width: 100%; max-width: 720px; }
+.back-link { display: inline-block; margin: 22px 0 0; font-weight: 800; color: var(--orange); }
+
+@media (min-width: 720px) {
+  .posts { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ---------- Fußzeile ---------- */
 footer { background: var(--ink); color: #cfcdd6; text-align: center; padding: 30px 20px; font-weight: 600; font-size: 14px; }
 footer a { color: #ffd28a; }
