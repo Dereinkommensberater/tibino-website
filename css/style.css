@@ -89,37 +89,20 @@ nav { display: flex; align-items: center; justify-content: space-between; gap: 1
 /* Kompakte Knöpfe, damit beide in EINE Zeile passen — untereinander schoben sie sich sonst
    über Tibinos Gesicht. */
 .hero .cta-row .btn { padding: 11px 15px; font-size: 14.5px; }
-.hero h1 { margin-bottom: 2px; }
+/* Die Unterzeile „Kids Songs & Farm Stories" ist Teil des Logo-Bildes (Originalschrift),
+   nicht mehr als CSS-Text nachgebaut. */
+.hero h1 { margin-bottom: 14px; }
+.cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
-/* ---------- Figurenleiste unter dem Hero ----------
-   GRÖSSENVERHÄLTNISSE SIND ECHT (User-Befund): Vorher lagen alle Freisteller auf derselben
-   Bildhöhe, dadurch war Pip — das Küken und kleinste Figur der Serie — größer als Tibino.
-   Jede Figur bekommt jetzt ihren Anteil an einer gemeinsamen Bühnenhöhe, gemessen an ihrer
-   erzählten Körpergröße. */
-.cast-strip {
-  list-style: none; display: grid; grid-template-columns: repeat(5, 1fr);
-  gap: 4px; margin: -14px 0 0; padding: 0 0 6px; position: relative; z-index: 3;
-}
-.cast-strip li { text-align: center; }
-.cast-strip a { display: block; padding: 6px 2px 8px; border-radius: 16px; transition: background .15s; }
-.cast-strip a:hover { background: #fff; box-shadow: 0 6px 18px rgba(70, 176, 230, .18); }
-.cast-strip b { font-family: var(--display); font-weight: 600; font-size: 13px; display: block; margin-top: 2px; }
-.cast-strip .stage { height: 96px; display: flex; align-items: flex-end; justify-content: center; }
-.cast-strip .stage img { width: auto; max-width: 100%; }
-
-/* Gemeinsame Staffelung, auch von den Figurenkarten weiter unten genutzt.
+/* ---------- Figurengrößen ----------
    Bewusst gedämpft statt maßstabsgetreu: Ein Küken ist neben einem Kleinkind real winzig, als
-   Bild wäre es kaum noch erkennbar. Die Reihenfolge stimmt, die Spreizung ist gestaucht. */
+   Bild wäre es kaum noch erkennbar. Die Reihenfolge stimmt, die Spreizung ist gestaucht.
+   Ohne diese Staffelung war Pip — die kleinste Figur der Serie — größer als Tibino. */
 .s-tibino .stage img { height: 100%; }
 .s-foxy   .stage img { height: 80%; }
 .s-storm  .stage img { height: 66%; }
 .s-milo   .stage img { height: 58%; }
 .s-pip    .stage img { height: 50%; }
-.hero h1 { font-size: clamp(52px, 17vw, 96px); margin-bottom: 2px; }
-/* Die Unterzeile „Kids Songs & Farm Stories" ist Teil des Logo-Bildes (Originalschrift),
-   nicht mehr als CSS-Text nachgebaut. */
-.hero h1 { margin-bottom: 14px; }
-.cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
 /* ---------- Abschnitte ---------- */
 section { padding: 52px 0; }
@@ -157,6 +140,23 @@ h2 {
   box-shadow: 0 10px 30px rgba(44, 42, 53, .18); background: #000; aspect-ratio: 16/9;
 }
 .video-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+/* Vorschau mit Abspiel-Knopf — der Player kommt erst beim Klick. */
+.video-play {
+  width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer;
+  position: relative; display: block;
+}
+.video-play img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.play-icon {
+  position: absolute; inset: 0; margin: auto; width: 76px; height: 54px;
+  background: rgba(255, 90, 77, .95); border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .3); transition: transform .15s ease, background .15s ease;
+}
+.play-icon::after {
+  content: ""; position: absolute; inset: 0; margin: auto; width: 0; height: 0;
+  border-left: 20px solid #fff; border-top: 13px solid transparent; border-bottom: 13px solid transparent;
+  transform: translateX(3px);
+}
+.video-play:hover .play-icon { transform: scale(1.08); background: var(--coral); }
 
 /* ---------- Figuren ---------- */
 .chars { background: linear-gradient(180deg, #fff, #fffdf6); }
