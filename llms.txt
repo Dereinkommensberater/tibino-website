@@ -63,4 +63,4 @@ supervised playback is recommended.
 
 - [Website](https://tibinokids.com/)
 - [YouTube channel](https://www.youtube.com/@TibinoKids)
-- [Privacy](https://tibinokids.com/privacy.html)
+- [Privacy](https://tibinokids.com/privacy)
