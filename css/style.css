@@ -470,3 +470,18 @@ footer .legal { margin-top: 10px; font-size: 12.5px; color: #9a97a5; }
   .guide-grid.featured { grid-template-columns: repeat(3, 1fr); }
   .guide-grid.featured .guide-card h3 { font-size: 1.12rem; }
 }
+
+/* ═══ Sprachumschalter (v1.5) ═══════════════════════════════════════════════
+   Sitzt in beiden Kopfzeilen — der schlanken (.site .bar nav) und der grossen
+   (.navlinks) der Startseite. Bewusst nur zwei Buchstaben: ein Fahnen-Symbol waere
+   falsch, Sprache und Land sind nicht dasselbe. */
+.lang-switch{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:2.35em; padding:.18em .5em; margin-left:.35em;
+  border:1.5px solid var(--line,#e6d8bf); border-radius:999px;
+  font-size:.82em; font-weight:700; letter-spacing:.04em;
+  text-decoration:none; line-height:1.5;
+}
+.lang-switch:hover,.lang-switch:focus-visible{
+  border-color:var(--orange,#FF8A1E); color:var(--orange,#FF8A1E);
+}
