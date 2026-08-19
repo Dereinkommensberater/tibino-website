@@ -1,1 +1,7 @@
-.build/__pycache__/
+# Die Artikel-Generatoren liegen bewusst AUSSERHALB dieses Repos, unter
+# ../tibino-website-build/. Grund: Cloudflare Pages liefert alles aus, was im Repo liegt —
+# auch Punkt-Verzeichnisse (am 19.08. am Live-System nachgemessen, /_routes.json und die
+# Umbenennung auf .build haben beide NICHT gewirkt). Was nicht ausgeliefert werden soll,
+# darf also gar nicht erst im Repo liegen.
+.build/
+_build/
