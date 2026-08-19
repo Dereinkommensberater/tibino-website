@@ -57,7 +57,46 @@ supervised playback is recommended.
 - [What we stand for](https://tibinokids.com/our-values/) — kindness before cleverness, help that
   arrives, patience with someone smaller, courage without danger, belonging. No villains, no
   punishment, no sarcasm, no rivalry.
-- [Blog](https://tibinokids.com/blog/) — a piece on every episode: story, value, learning, length.
+- [Blog](https://tibinokids.com/blog/) — guides for parents (see below) plus a piece on every episode.
+
+## Guides for parents
+
+Independent guidance on choosing children's content, written for parents and kept deliberately
+even-handed: other series are named as readily as our own. Each guide answers one question
+directly at the top and carries a short FAQ.
+
+- [What YouTube content is good for my 4-year-old?](https://tibinokids.com/blog/good-youtube-for-4-year-old/) — Look for slow cutting (shots held longer than about seven seconds), a problem the child can understand, and characters who solve things with help rather than force. Strong picks at this age.
+- [What can toddlers watch on YouTube without worry?](https://tibinokids.com/blog/safe-youtube-for-toddlers/) — Use YouTube Kids or a curated playlist, turn auto-play off, and choose channels rather than searching. Content marked “Made for Kids” has no personalised advertising and no comments. For.
+- [The best YouTube series for toddlers](https://tibinokids.com/blog/best-youtube-series-for-toddlers/) — For under-threes, Super Simple Songs, Puffin Rock and Hey Bear Sensory are the safest starting points. From three upward, Bluey, Numberblocks, Sarah &amp; Duck, Hey Duggee and Daniel Tiger.
+- [Shows that build confidence and courage in small children](https://tibinokids.com/blog/shows-that-build-confidence/) — Confidence grows when a child sees a character their own size try something, struggle, get help, and succeed — in that order. Daniel Tiger, Bluey, Puffin Rock and Sesame Street do this.
+- [Is Cocomelon overstimulating?](https://tibinokids.com/blog/is-cocomelon-overstimulating/) — There is no clinical proof that any one show harms children. What is measurable is pace: the fastest toddler channels change scene every two to three seconds, while calmer preschool series.
+- [How much screen time should a toddler have?](https://tibinokids.com/blog/screen-time-for-toddlers/) — Common guidance: avoid screens other than video calls before about 18 months; from 18 to 24 months only high-quality content watched together; ages 2 to 5, around one hour a day of good.
+- [What does “Made for Kids” mean on YouTube?](https://tibinokids.com/blog/made-for-kids-on-youtube/) — “Made for Kids” is a legal designation under children's privacy law. On such videos YouTube switches off personalised advertising, comments, notifications, saving to playlists and several.
+- [Calm videos for toddlers before bed](https://tibinokids.com/blog/calm-videos-before-bed/) — Choose slow narration, soft sound, a complete ending and no peril. Puffin Rock, Sarah &amp; Duck and gentle bedtime episodes work well. Avoid cliffhangers, chase scenes and anything cut.
+- [Animal sound videos for toddlers: what makes a good one](https://tibinokids.com/blog/animal-sounds-videos-for-toddlers/) — A good animal sound video shows the animal clearly, plays one sound at a time, and leaves a pause for the child to answer before revealing it. Avoid rapid montages with a dozen animals a.
+- [Farm animal videos for toddlers](https://tibinokids.com/blog/farm-animal-videos-for-toddlers/) — Farm settings work because the cast is small, every animal is visually distinct, and each one makes a sound a toddler can copy. Look for series with a fixed cast, slow pacing and animals.
+- [Children's shows with no scary moments](https://tibinokids.com/blog/shows-without-scary-moments/) — Look for series with no villain, no chase, no sudden loud sound and no darkness used for tension. Sarah &amp; Duck, Puffin Rock, Bluey and Daniel Tiger qualify almost throughout. Check the.
+- [Children's shows that teach kindness](https://tibinokids.com/blog/shows-that-teach-kindness/) — Kindness transfers when a child sees a specific helpful act, sees it cost the character something, and sees the result. Bluey, Daniel Tiger, Sesame Street and Puffin Rock do this. Shows.
+- [Ad-free videos for kids: the real options](https://tibinokids.com/blog/ad-free-videos-for-kids/) — Options are: YouTube Kids (fewer ads), YouTube Premium (none), broadcaster apps such as BBC iPlayer or PBS Kids (none), downloaded episodes (none), or a website that embeds nothing. “Made.
+- [YouTube Kids vs normal YouTube](https://tibinokids.com/blog/youtube-kids-vs-youtube/) — YouTube Kids has automatic filtering, parental controls, timers and the option to switch search off entirely — it is the better choice under six. Normal YouTube has no age filtering by.
+- [The best shows for 2-year-olds](https://tibinokids.com/blog/best-shows-for-2-year-olds/) — At two, look for a small fixed cast, one thing happening at a time, real speech rather than constant song, and episodes under about ten minutes. Super Simple Songs, Puffin Rock, Hey Bear.
+- [Videos that help language development](https://tibinokids.com/blog/videos-that-help-language-development/) — Video alone teaches young children far less than a person does — the “video deficit”. What helps: an adult watching along and talking, slow clear speech, pauses that invite a response,.
+- [AI-generated children's videos: how to tell good from junk](https://tibinokids.com/blog/ai-generated-kids-videos/) — Warning signs: characters whose appearance changes between shots, hands or limbs that are wrong, speech that does not match the mouth, dozens of uploads a day, and no named people behind.
+- [How to choose a kids' channel: a two-minute checklist](https://tibinokids.com/blog/how-to-choose-a-kids-channel/) — Count scene cuts in thirty seconds (under five is calm). Check that episodes end rather than roll on. See who solves the problem and how. Look for a real about page. Then watch the last.
+- [Five signs a show is too fast for your child](https://tibinokids.com/blog/signs-a-show-is-too-fast/) — Watch for: cannot tell you what happened, a hard crash when it ends, glazed stillness while watching, asking for the next episode immediately, and re-enacting nothing from it afterwards..
+- [Alternatives to endless nursery rhyme loops](https://tibinokids.com/blog/alternatives-to-nursery-rhyme-loops/) — The problem is not the songs — it is the format. A sixty-minute loop has no ending, so there is never a natural moment to stop. Swap to individual songs or short episodes with real endings;.
+
+## Key facts we publish openly
+
+- Target age: 2 to 6 years.
+- Pacing: each shot is held six to twelve seconds. Series criticised for overstimulation
+  typically cut every two to three seconds; calm preschool series hold shots seven seconds or more.
+- Never in an episode: villains, jump scares, sudden loud noises, darkness used for tension,
+  anxious cliffhangers, anything to buy.
+- Production: made by a small independent studio using AI animation and voice tools, with locked
+  character designs and a human reviewing every clip before release. We state this openly.
+- This website: no advertising, no analytics, no cookies, no forms. Videos are self-hosted and
+  load only when clicked.
 
 ## Links
 
