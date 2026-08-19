@@ -98,6 +98,20 @@ directly at the top and carries a short FAQ.
 - This website: no advertising, no analytics, no cookies, no forms. Videos are self-hosted and
   load only when clicked.
 
+## Character pages
+
+Each of the eight characters has its own page with a portrait, where it lives, what it is
+like, and a fifteen-second video in which it introduces itself.
+
+- [Tibino — the little farmer](https://tibinokids.com/characters/tibino/)
+- [Storm — the brave puppy](https://tibinokids.com/characters/storm/)
+- [Pip — the little chick](https://tibinokids.com/characters/pip/)
+- [Foxy — the playful fox](https://tibinokids.com/characters/foxy/)
+- [Milo — the new kitten](https://tibinokids.com/characters/milo/)
+- [Daisy — the gentle cow](https://tibinokids.com/characters/daisy/)
+- [Rosie — the bouncy piglet](https://tibinokids.com/characters/rosie/)
+- [Woolly — the littlest lamb](https://tibinokids.com/characters/woolly/)
+
 ## Links
 
 - [Website](https://tibinokids.com/)
