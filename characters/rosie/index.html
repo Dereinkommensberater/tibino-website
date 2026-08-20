@@ -136,5 +136,22 @@
   </div>
 </footer>
 
+<script>
+  // Erst auf Klick laden — ohne Klick geht kein Byte Video ueber die Leitung.
+  // Derselbe Handler wie auf der Startseite; hier hatte er gefehlt, deshalb liess
+  // sich das Vorstellvideo nicht starten.
+  document.querySelectorAll('.char-video').forEach(function (box) {
+    var knopf = box.querySelector('.video-play');
+    if (!knopf) return;
+    knopf.addEventListener('click', function () {
+      var v = document.createElement('video');
+      v.src = box.dataset.src;
+      v.controls = true; v.autoplay = true; v.playsInline = true;
+      v.setAttribute('aria-label', box.dataset.name);
+      box.replaceChildren(v);
+    });
+  });
+</script>
+
 </body>
 </html>
