@@ -1,0 +1,14 @@
+# Gehashte Build-Assets: Dateiname aendert sich bei jeder Aenderung -> unbegrenzt cachebar
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Bilder/Medien ohne Hash: 7 Tage. Bewusst NICHT immutable — ein ersetztes
+# Thumbnail unter gleichem Namen wuerde sonst ein Jahr lang alt ausgeliefert.
+/img/*
+  Cache-Control: public, max-age=604800
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
